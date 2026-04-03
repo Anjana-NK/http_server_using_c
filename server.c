@@ -13,8 +13,7 @@
 #define PORT 8080
 #define BUFFER_SIZE 1048576
 
-// ---------- FILE EXTENSION ----------
-const char *get_file_extension(const char *file_name) {
+const char *get_file_extension(const char *file_name) { // Function to get .html, .png, etc
     const char *dot = strrchr(file_name, '.');
     if (!dot || dot == file_name) {
         return "";
